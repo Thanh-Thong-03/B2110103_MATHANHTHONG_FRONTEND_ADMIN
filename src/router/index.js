@@ -37,13 +37,6 @@ const routes = [
     component: () => import("../views/ProductCreate.vue"),
   },
   {
-    path: "/product/:id",
-    meta: {
-      title: "Trang xem chi tiết sản phẩm",
-    },
-    component: () => import("../views/ProductDetail.vue"),
-  },
-  {
     path: "/product/update/:id",
     meta: {
       title: "Trang sửa sản phẩm",

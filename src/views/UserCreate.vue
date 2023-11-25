@@ -55,17 +55,11 @@
   
   export default {
     setup() {
-      //const sizeArray = ref([]);
       const fullName = ref();
       const email = ref();
       const diachi = ref();
       const phone = ref();
-  
-      // const handleChange = (e) => {
-      //   sizeArray.value.push(e.target.value);
-      // };
-  
-      //khi create dung cai mang sizeArray hoi. Mau lam tuong tu.
+
       const create = async () => {
         try {
           const res = await userService.create({
@@ -85,7 +79,6 @@
         diachi,
         phone,
         create,
-        //handleChange,
       };
     },
   };
